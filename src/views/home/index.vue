@@ -71,7 +71,26 @@
                     <span class="gcsxl">各城市销量</span>
                 </div>
                 <div class="home-mid-zm">
-
+                    <div class="circle1">
+                        <div class="line"></div>
+                        <span class="nc">南昌</span>
+                        <span class="num">1688</span>
+                    </div>
+                    <div class="circle2">
+                        <div class="line"></div>
+                        <span class="nc">上海</span>
+                        <span class="num">1759</span>
+                    </div>
+                    <div class="circle3">
+                        <div class="line"></div>
+                        <span class="nc">香港</span>
+                        <span class="num">1634</span>
+                    </div>
+                    <div class="circle4">
+                        <div class="line"></div>
+                        <span class="nc">德国</span>
+                        <span class="num">2011</span>
+                    </div>
                 </div>
                 <div class="home-mid-db">
                     <div class="kcxx-box">
@@ -740,7 +759,7 @@ export default {
                         label: {
                             show: true,
                             verticalAlign: "middle",
-                            position: ['70%', '-80%'], 
+                            position: ['70%', '-80%'],
                             fontSize: 40,
                             color: 'rgb(132, 190, 72)',
                             formatter: function (data) {
@@ -872,7 +891,7 @@ export default {
                     .xb {
                         display: flex;
                         justify-content: end;
-                        font-size: 25px;
+                        font-size: 35px;
                         padding-right: 20px;
                         color: #fff;
                         padding-top: 10px;
@@ -933,6 +952,148 @@ export default {
                 background: url(../../assets/mid-bg.png);
                 background-repeat: no-repeat;
                 background-size: 100% 90%;
+                position: relative;
+
+                .circle1 {
+                    position: absolute;
+                    top: 20px;
+                    left: 160px;
+                    width: 60px;
+                    height: 60px;
+                    background-color: transparent;
+                    background-color: rgba(217, 224, 15, .2);
+                    border-radius: 50%;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    /* 确保内部阴影不会溢出 */
+                    .line {
+                        width: 1px;
+                        height: 60px;
+                        background-color: rgb(110, 112, 46);
+                        position: absolute;
+                        bottom: -60px;
+                    }
+
+                    .nc {
+                        color: #fff;
+                        font-size: 16px;
+                    }
+
+                    .num {
+                        font-size: 12px;
+                    }
+                }
+                .circle2 {
+                    position: absolute;
+                    top: -20px;
+                    left: 260px;
+                    width: 90px;
+                    height: 90px;
+                    background-color: transparent;
+                    background-color: rgba(96, 61, 23,.7);
+                    border-radius: 50%;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    /* 确保内部阴影不会溢出 */
+                    .line {
+                        width: 1px;
+                        height: 60px;
+                        background-color: rgb(96, 61, 23);
+                        position: absolute;
+                        bottom: -60px;
+                    }
+
+                    .nc {
+                        color: #fff;
+                        font-size: 20px;
+                       
+                    }
+
+                    .num {
+                       
+                        font-size: 16px;
+                    }
+                }
+                .circle3 {
+                    position: absolute;
+                    top: 50px;
+                    left: 380px;
+                    width: 50px;
+                    height: 50px;
+                    background-color: transparent;
+                    background-color: rgba(6, 101, 68,.7);
+                    border-radius: 50%;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    /* 确保内部阴影不会溢出 */
+                    .line {
+                        width: 1px;
+                        height: 60px;
+                        background-color: rgb(6, 101, 68);
+                        position: absolute;
+                        bottom: -60px;
+                    }
+
+                    .nc {
+                        color: #fff;
+                        font-size: 12px;
+                    
+                    }
+
+                    .num {
+                       
+                        font-size: 12px;
+                    }
+                }
+                .circle4 {
+                    position: absolute;
+                    top: -25px;
+                    right: 200px;
+                    width: 110px;
+                    height: 110px;
+                    background-color: transparent;
+                    background-color: rgba(94, 41, 116,.7);
+                    border-radius: 50%;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    /* 确保内部阴影不会溢出 */
+                    .line {
+                        width: 1px;
+                        height: 90px;
+                        background-color: rgb(94, 41, 116);
+                        position: absolute;
+                        bottom: -90px;
+                    }
+
+                    .nc {
+                        color: #fff;
+                        font-size: 22px;
+                    
+                    }
+
+                    .num {
+                       
+                        font-size: 16px;
+                    }
+                }
+
+
             }
 
             .home-mid-db {
